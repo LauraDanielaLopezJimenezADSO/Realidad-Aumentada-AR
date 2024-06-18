@@ -20,8 +20,8 @@ document.addEventListener('DOMContentLoaded', () => {
     scene.add(light);
 
     //primer modelo 
-    const armadillo = await loadGLTF('../../assets/models/armadillo.glb');
-    armadillo.scene.scale.set(0.1, 0.1, 0.1);
+    const armadillo = await loadGLTF('../../assets/models/armadillo_modificado.glb');
+    armadillo.scene.scale.set(5, 5, 5);
     armadillo.scene.position.set(0, 0, 0);
 
     //segundo modelo 
