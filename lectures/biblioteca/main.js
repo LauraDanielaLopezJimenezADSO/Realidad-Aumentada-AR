@@ -3,12 +3,6 @@ const THREE = window.MINDAR.IMAGE.THREE;
 
 document.addEventListener('DOMContentLoaded', () => {
   const start = async() => {
-
-    try {
-      
-    } catch (error) {
-      
-    }
     const mindarThree = new window.MINDAR.IMAGE.MindARThree({
       container: document.body,
       imageTargetSrc: '../../assets/targetsnuevos/libroNaturalezaRiesgo.mind',
