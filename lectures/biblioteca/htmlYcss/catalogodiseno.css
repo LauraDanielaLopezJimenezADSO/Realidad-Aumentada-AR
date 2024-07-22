@@ -99,3 +99,12 @@ body {
     text-transform: capitalize;
     margin: auto;
 }
+
+@media (max-width: 500px) {
+    .main{
+        overflow: hidden;
+        background: url(../imagenes/fondo.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}
