@@ -71,12 +71,14 @@ body {
     align-items: center;
     background: var(--blanco);
     color: var(--azulOscuro);
-    width: 148px;
+    width: 200px;
     height: 44px;
     font-size: 16px;
     border-radius: 13px;
     position: relative;
     z-index: 2;
+    /*  */
+    padding: 0 10px; 
 }
 
 .navegacion__cuadro{
@@ -96,15 +98,23 @@ body {
 
 .portada__titulo{
     border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
     text-transform: capitalize;
-    margin: auto;
+    text-align: center;
+    overflow: hidden; /* Para manejar el texto largo */
+    text-overflow: ellipsis; /* Para agregar '...' si el texto es demasiado largo */
+    padding: 0 5px; 
 }
 
 @media (max-width: 500px) {
     .main{
-        overflow: hidden;
+        /* overflow: hidden;
         background: url(../imagenes/fondo.png);
         background-size: cover;
-        background-repeat: no-repeat;
+        background-repeat: no-repeat; */
     }
 }
