@@ -1,3 +1,4 @@
+@import url(./disenoInicio.css);
 *{
     margin: 0;
     padding: 0;
@@ -18,12 +19,9 @@ html, body{
     margin-bottom: 0px;
     width: 100%;
     height: auto;
-    background: #ffffff;
-    position: fixed;
     z-index: 5;
     justify-content: space-between;
     padding: 0px 24px 0px 24px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .header__titulo{

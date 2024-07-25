@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const start = async() => {
     const mindarThree = new window.MINDAR.IMAGE.MindARThree({
       container: document.body,
-      imageTargetSrc: '../../assets/targetsnuevos/targetsAlicia.mind',
+      imageTargetSrc: '../../assets/targetsnuevos/targetsAlicias.mind',
       maxTrack: 4,
     });
     const {renderer, scene, camera} = mindarThree;
@@ -14,24 +14,24 @@ document.addEventListener('DOMContentLoaded', () => {
     scene.add(light);
 
     //primer modelo 
-    const conejo = await loadGLTF('../../assets/models/libroAliciaMaravilllas/aliciaConejo.glb'); //reina de corazones
-    conejo.scene.scale.set(0.2, 0.2, 0.2);
+    const conejo = await loadGLTF('../../assets/models/libroAliciaMaravilllas/aliciaConejo.glb'); 
+    conejo.scene.scale.set(0.1, 0.1, 0.1);
     conejo.scene.position.set(0, 0, 0);
 
     //segundo modelo 
-    const bear = await loadGLTF('../../assets/models/libroAliciaMaravilllas/momentoTe.glb');
-    bear.scene.scale.set(0.3, 0.3, 0.3);
+    const bear = await loadGLTF('../../assets/models/libroAliciaMaravilllas/momentoTe.glb'); 
+    bear.scene.scale.set(0.1, 0.1, 0.1);
     bear.scene.position.set(0, 0, 0);
 
     
     //tercer modelo 
-    const raccoon = await loadGLTF('../../assets/models/libroAliciaMaravilllas/reinaCorazones.glb'); //conejo 
-    raccoon.scene.scale.set(0.2, 0.2, 0.2);
+    const raccoon = await loadGLTF('../../assets/models/libroAliciaMaravilllas/reinaCorazones.glb'); 
+    raccoon.scene.scale.set(0.1, 0.1, 0.1);
     raccoon.scene.position.set(0, 0, 0);
 
     //cuarto modelo 
-    const sombrerero = await loadGLTF('../../assets/models/libroAliciaMaravilllas/reinaCorazones.glb'); //momento te 
-    sombrerero.scene.scale.set(0.2, 0.2, 0.2);
+    const sombrerero = await loadGLTF('../../assets/models/libroAliciaMaravilllas/sombrerero.glb'); 
+    sombrerero.scene.scale.set(2, 2, 2);
     sombrerero.scene.position.set(0, 0, 0);
     
     //0 representa la primera imagen 
@@ -50,9 +50,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const mixer1 = new THREE.AnimationMixer(raccoon.scene);
 
     //2 representa la terceera imagen 
-    const sombrereroAnchor = mindarThree.addAnchor(2);
-    sombrereroAnchor.group.add(raccoon.scene);
-    const mixerSombrerero = new THREE.AnimationMixer(raccoon.scene);
+    const sombrereroAnchor = mindarThree.addAnchor(3);
+    sombrereroAnchor.group.add(sombrerero.scene);
+    const mixerSombrerero = new THREE.AnimationMixer(sombrerero.scene);
    
     const clock = new THREE.Clock();
     await mindarThree.start();
