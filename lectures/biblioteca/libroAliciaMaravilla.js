@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
     conejo.scene.position.set(0, 0, 0);
 
     //segundo modelo 
-    const bear = await loadGLTF('../../assets/models/libroAliciaMaravilllas/momentoTe.glb'); 
+    const bear = await loadGLTF('../../assets/models/libroAliciaMaravilllas/momentooTe.glb');  
     bear.scene.scale.set(0.1, 0.1, 0.1);
     bear.scene.position.set(0, 0, 0);
 
