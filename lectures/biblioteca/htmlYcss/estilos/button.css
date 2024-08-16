@@ -1,0 +1,72 @@
+:root {
+    --vinoTinto: #671C34;
+    --verdeVivo: #3BAA00;
+    --blanco: white;
+    --vinoHover: #DFACA2;
+    --azulOscuro: #001629;
+    --font-size: 15px;
+    --border-radius: 13px;
+    --radio : 60px;
+}
+.anillo-cont {
+     height: 0px;
+     width: 50%;
+     position: relative;
+}
+*,
+*::before,
+*::after {
+     box-sizing: border-box;
+}
+.anillo-animado,
+.anillo-animado::before, 
+.anillo-animado::after{
+     border-radius:50%;
+     position: absolute;
+     top: 0;
+     bottom: 0;
+     left: 0;
+     right: 0;
+}
+.anillo-animado {
+     background: var(--vinoTinto);
+     color: var(--blanco);   /*color lineas*/
+     display:flex;         /*para centrar el texto*/
+     justify-content:center;
+     align-items:center;
+     text-align:center;
+     width: var(--radio);
+     height: var(--radio);
+     margin: auto;        /*situar en el centro de su conenedor*/
+     padding: 4px;
+}
+.anillo-animado::before, 
+.anillo-animado::after {
+     content: "";
+     z-index: -1;
+     margin: -10px;     /*separación entre lineas y caja*/
+     border: 2px solid black; /*grosor y color de la linea animada*/
+     animation: girar-anillo 10s linear infinite; /*Opciones de la animación*/
+     clip-path:polygon(50% 50%, 70% 100%, 0% 100%); /*Sector de anillo*/
+     background:white;
+}
+
+.anillo-animado::before {
+     animation-delay: -5s;
+  }
+@keyframes girar-anillo {
+    0% {
+       transform: rotate(0deg);
+    }
+    100% {
+     transform: rotate(359deg);
+    }
+}
+.relleno {
+  color: white;
+  font-size: 40px;
+  padding: 10px;
+  transition: background 0.2s ease, transform 0.2s ease;
+  width: 60px;
+  height: 60px;
+}

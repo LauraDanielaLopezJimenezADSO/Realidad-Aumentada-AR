@@ -1,0 +1,164 @@
+@import url(./footer.css);
+@import url(./button.css);
+@import url(./header.css);
+:root {
+    --vinoTinto: #671C34;
+    --verdeVivo: #3BAA00;
+    --blanco: white;
+    --vinoHover: #DFACA2;
+    --azulOscuro: #001629;
+    --font-size: 15px;
+    --border-radius: 13px;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.body {
+    font-family: "Work Sans", sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    margin: 0;
+}
+
+/* pagina de inicio */
+
+
+.sectionTexto {
+    text-align: center;
+    padding: 35px 30px;
+}
+
+.sectionTexto__titulo {
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--vinoTinto);
+}
+
+.sectionTexto__titulo--sobresalir {
+    font-weight: 800;
+    font-size: 26px;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.main__sectionImagen {
+    text-align: center;
+}
+
+.sectionImagen__cont{
+    display: flex;
+    margin: 0px 18px 0px 18px;
+}
+
+.mascota {
+    width: 80%;
+    max-width: 400px;
+    height: auto;
+}
+
+/* .interaccion{
+    display: flex;
+}
+
+.relleno {
+    background: var(--vinoTinto);
+    color: var(--blanco);
+    border-radius: 50%;
+    font-size: 40px;
+    padding: 10px;
+    cursor: pointer;
+    transition: background 0.2s ease, transform 0.2s ease;
+    width: 60px;
+    height: 60px;
+}
+
+.relleno:hover {
+    background: var(--vinoHover);
+    transform: scale(1.1) translateY(-5px);
+}
+
+ */
+
+
+/* Estilos para movil */
+@media (min-width: 600px) {
+    .contenedor {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    .header {
+        padding: 24px;
+        text-align: left;
+    }
+
+    .sectionImagen__cont{
+        display: flex;
+        margin: 40px 18px 0px 18px;
+    }
+
+    /* .sectionTexto {
+        text-align: center;
+        padding: 35px 18px;
+    } */
+
+    .sectionTexto__titulo {
+        font-size: 32px;
+        padding: 24px 0px 0px 0px;
+    }
+
+    .mascota {
+        width: 100%;
+        max-width: 445px;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 1024px) {
+    .logo {
+        width: 160px;
+        height: auto;
+    }
+
+    .contenedor {
+        max-width: 700px;
+        margin: 0 auto;
+    }
+
+    .header {
+        padding: 24px;
+        text-align: left;
+    }
+
+    .sectionImagen__cont{
+        display: flex;
+    }
+
+    .sectionTexto__titulo {
+        font-size: 32px;
+        padding: 24px 0px 0px 0px;
+    }
+
+    .mascota {
+        width: 100%;
+        max-width: 400px;
+    }
+}
+
+
+/* pagina de catalogo */
+
+
+
+
