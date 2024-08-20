@@ -1,11 +1,11 @@
-@import url(./disenoInicio.css);
+
 .footer {
-    background: var(--vinoTinto);
-    color: var(--blanco);
+    background: #671C34;
+    color: white;
     text-align: center;
     padding: 16px;
     position: relative;
-    
+    height: 60px;
 }
 
 .footer__texto {

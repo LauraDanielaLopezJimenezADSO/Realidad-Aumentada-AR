@@ -1,5 +1,5 @@
 .catalogo__cont{
-    margin: 20px 25px;
+    /* margin: 20px 23px 20px 35px; */
     height: calc(90vh);
     overflow-y: scroll;
 }

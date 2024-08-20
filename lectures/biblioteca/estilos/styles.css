@@ -1,4 +1,4 @@
-@import url(./footer.css);
+/* @import url(./footer.css);
 
 html, .body{
     position: relative; 
@@ -40,8 +40,8 @@ html, .body{
     }
 
     .header__titulo {
-        font-size: 32px; /* Original font size for larger screens */
-        margin-bottom: 0; /* Remove margin */
+        font-size: 32px; 
+        margin-bottom: 0; 
     }
 
     .header__logo {
@@ -50,4 +50,4 @@ html, .body{
         padding: 16px 0px 16px 0px;
     }
 }
-
+ */

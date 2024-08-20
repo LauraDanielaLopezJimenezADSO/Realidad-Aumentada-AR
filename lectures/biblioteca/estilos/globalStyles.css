@@ -1,0 +1,18 @@
+:root {
+    --vinoTinto: #671C34;
+    --verdeVivo: #3BAA00;
+    --blanco: white;
+    --vinoHover: #DFACA2;
+    --azulOscuro: #001629;
+    --font-size: 15px;
+    --border-radius: 13px;
+    --header-height: 32px;
+    --footer-height: 60px;
+    --font-family: "Work Sans", sans-serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
