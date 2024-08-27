@@ -2,7 +2,8 @@
 @import url(./button.css);
 @import url(./header.css);
 @import url(./globalStyles.css);
-body {
+
+.body {
     font-family: var(--font-family);
     display: flex;
     flex-direction: column;

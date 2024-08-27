@@ -1,0 +1,11 @@
+@import url(header.css);
+@import url(footer.css);
+@import url(globalStyles.css);
+
+body{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+}

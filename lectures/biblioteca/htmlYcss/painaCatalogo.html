@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Realidad Aumentada Biblioteca CIMI</title>
-    <link rel="stylesheet" href="../estilos/stylesCatalogo.css">
-    <link rel="shortcut icon" href="/lectures/biblioteca/imagenes/iconologo.png">
+    <link type="text/css" href="../estilos/stylesCatalogo.css" rel="stylesheet"/>
+
+    <link rel="shortcut icon" href="../imagenes/iconologo.png">
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<body>
+<body class="bodyCatalog">
     
     <!-- header -->
     <header class="header">
@@ -17,15 +18,15 @@
     </header>
     
     <main class="contenedor">
-        <section class="plantaUno"></section>
+        <section class="contenedor__plantaUno"></section>
         <!-- <img class="contenedor__p1" src="../imagenes/plantaIzquierda.png"> -->
         <section class="contenedor__catalogo ">
             <div class="catalogo__cont">
                 <article class="estanteria">
                     <section class="include">
                         <div class="cont">
-                            <a href="#">
-                                <img class="cont__imagen" src="../imagenes/porNaturalezRiesg.jpg" alt="Colombia Naturaleza en Riesgo">
+                            <a href="../libroNaturalezaRiesgo.html">
+                                <img class="cont__imagen" src="../imagenes/porNaturalezRiesg.png" alt="Colombia Naturaleza en Riesgo">
                             </a>
                             <a class="cuaText" href="#">
                                 <div class="cuaText__cuadro">
@@ -42,7 +43,7 @@
                     <section class="include">
                         <div class="cont">
                             <a href="#">
-                                <img class="cont__imagen" src="../imagenes/alicia.jpeg" alt="Colombia Naturaleza en Riesgo">
+                                <img class="cont__imagen" src="../imagenes/alicia.png" alt="Alicia en el país de las maravillas">
                             </a>
                             <a class="cuaText" href="#">
                                 <div class="cuaText__cuadro">
@@ -59,13 +60,13 @@
                     <section class="include">
                         <div class="cont">
                             <a href="#">
-                                <img class="cont__imagen" src="../imagenes/harryPootter.jpg" alt="Colombia Naturaleza en Riesgo">
+                                <img class="cont__imagen" src="../imagenes/harryPootter.png" alt="Harry Poter: el gran libro de los personajes">
                             </a>
                             <a class="cuaText" href="#">
                                 <div class="cuaText__cuadro">
                                     <img class=" cuaText__cont" src="../imagenes/Group_10.png" alt="cuadro">
                                 </div>
-                                <p class="cuaText__texto">harry potter el gran libro de los personajes</p>
+                                <p class="cuaText__texto">harry potter: el gran libro de los personajes</p>
                             </a>
                             <a href=""></a>
                         </div>
@@ -75,8 +76,8 @@
                 <article class="estanteria">
                     <section class="include">
                         <div class="cont">
-                            <a href="#">
-                                <img class="cont__imagen" src="../imagenes/Installaciones.png" alt="Colombia Naturaleza en Riesgo">
+                            <a href="../libroInstalacionesElectricas.html">
+                                <img class="cont__imagen" src="../imagenes/Installaciones.png" alt="Instalaciones eléctricas">
                             </a>
                             <a class="cuaText" href="#">
                                 <div class="cuaText__cuadro">
@@ -93,7 +94,7 @@
                     <section class="include">
                         <div class="cont">
                             <a href="#">
-                                <img class="cont__imagen" src="../imagenes/motocicleta.png" alt="Colombia Naturaleza en Riesgo">
+                                <img class="cont__imagen" src="../imagenes/motocicleta.png" alt="Enciclopedia visual de la motocicleta">
                             </a>
                             <a class="cuaText" href="#">
                                 <div class="cuaText__cuadro">
@@ -110,13 +111,13 @@
                     <section class="include">
                         <div class="cont">
                             <a href="#">
-                                <img class="cont__imagen" src="../imagenes/porNaturalezRiesg.jpg" alt="Colombia Naturaleza en Riesgo">
+                                <img class="cont__imagen" src="../imagenes/portadaOceanos.png" alt="El corazón de nuestro planeta azúl">
                             </a>
                             <a class="cuaText" href="#">
                                 <div class="cuaText__cuadro">
                                     <img class=" cuaText__cont" src="../imagenes/Group_10.png" alt="cuadro">
                                 </div>
-                                <p class="cuaText__texto">colombia Naturaleza en riesgo</p>
+                                <p class="cuaText__texto">El corazón de nuestro planeta azúl</p>
                             </a>
                             <a href=""></a>
                         </div>
@@ -124,7 +125,7 @@
                 </article>
             </div>
         </section>
-        <section class="plantaDos"></section>
+        <section class="contenedor__plantaDos"></section>
         <!-- <img class="contenedor__p2" src="../imagenes/plantaDerecha.png"> -->
     </main>
     <!-- FOOTER -->
